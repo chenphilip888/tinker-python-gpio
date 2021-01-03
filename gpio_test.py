@@ -404,9 +404,12 @@ def oledascii():
 
 def ssd1306_test():
     GPIO.output(led, GPIO.HIGH)
+    time.sleep( 0.05 )
     spi.open(2, 0)
     spi.max_speed_hz = 5000000
+    time.sleep( 0.05 )
     ssd1306_init()
+    time.sleep( 0.05 )
 
     # set_page_mode()
     set_horizontal_mode()
