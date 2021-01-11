@@ -52,7 +52,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo shutdown -h now
 Power on ASUS tinkerboard
-sudo apt-get install python-dev python-pip python-setuptools python3-dev python3-pip python3-setuptools dnsutils apache2 vsftpd
+sudo apt-get install python-dev python-pip python-setuptools python3-dev python3-pip python3-setuptools dnsutils apache2 vsftpd ftp git
 
 -------------------------------------------------------------------------
 Install python gpio library on ASUS Tinkerboard:
@@ -60,9 +60,9 @@ git clone https://github.com/TinkerBoard/gpio_lib_python.git
 cd ~/gpio_lib_python
 sudo python setup.py install
 cd ~/
-pip install serial
-pip install pyserial
-pip install spidev
+sudo pip install serial
+sudo pip install pyserial
+sudo pip install spidev
 sudo apt-get install python-smbus
 git clone https://github.com/doceme/py-spidev.git
 cd ~/py-spidev
